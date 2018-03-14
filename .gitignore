@@ -4,12 +4,15 @@ doc/
 download/
 include/
 lib/
+lib64/
 libexec/
 mkspecs/
 plugins/
+phrasebooks/
 qml/
 share/
 translations/
+etc/xdg/
 etc/cache.pickle
 etc/blueprints/install.db
 etc/blueprints/install.db-journal
