@@ -1,0 +1,15 @@
+bin/
+build/
+doc/
+download/
+include/
+lib/
+libexec/
+mkspecs/
+plugins/
+qml/
+share/
+translations/
+etc/cache.pickle
+etc/blueprints/install.db
+etc/blueprints/install.db-journal
