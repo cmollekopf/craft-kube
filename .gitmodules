@@ -1,6 +1,8 @@
 [submodule "craft"]
     path = craft
     url = https://github.com/cmollekopf/craft
+    branch = kube
 [submodule "blueprints"]
     path = etc/blueprints/locations/craft-blueprints-kde
     url = https://github.com/cmollekopf/craft-blueprints-kde
+    branch = kube
