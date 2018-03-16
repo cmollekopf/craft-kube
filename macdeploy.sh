@@ -22,6 +22,7 @@ cp -R $PWD/lib/qml/org $PWD/$APP/Contents/Resources/qml/
 
 macdeployqt $PWD/$APP -qmldir=$PWD/$APP/Contents/Resources/qml -verbose=2 -executable=$PWD/$APP/Contents/MacOS/sinksh -executable=$PWD/$APP/Contents/MacOS/sink_synchronizer -executable=$PWD/$APP/Contents/PlugIns/sink/resources/libsink_resource_imap.dylib  -executable=$PWD/$APP/Contents/Resources/qml/org/kube/framework/libframeworkplugin.dylib -executable=$PWD/$APP/Contents/Resources/qml/org/kube/accounts/kolabnow/libkolabnowaccountplugin.dylib -libpath=$PWD/$APP/Contents/Resources/qml/org/kube/framework/
 
+install_name_tool -change $PWD/lib/libframeworkplugin.dylib @loader_path/../../framework/libframeworkplugin.dylib $APP/Contents/Resources/qml/org/kube/accounts/kolabnow/libkolabnowaccountplugin.dylib
 # create the final disk image
 macdeployqt Applications/KDE/kube.app -dmg
 
