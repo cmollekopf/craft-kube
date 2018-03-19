@@ -10,8 +10,8 @@ set -e
 APP=Applications/KDE/kube.app
 
 # Start from scratch
-rm -R Applications
-craft --qmerge kde/pim/kube
+rm -Rf Applications
+craft --qmerge extragear/kube
 
 # Install necessary binaries
 cp $PWD/bin/sinksh $PWD/$APP/Contents/MacOS/

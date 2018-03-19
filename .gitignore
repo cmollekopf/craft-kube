@@ -16,3 +16,4 @@ etc/xdg/
 etc/cache.pickle
 etc/blueprints/install.db
 etc/blueprints/install.db-journal
+Applications/
