@@ -57,5 +57,5 @@ install_name_tool -change $PWD/lib/libframeworkplugin.dylib @loader_path/../../f
 
 
 # create the final disk image
-macdeployqt Applications/KDE/kube.app -dmg
+macdeployqt $APP -dmg
 
