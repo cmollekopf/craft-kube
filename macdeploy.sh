@@ -32,7 +32,8 @@ cp -R $PWD/lib/qml/org $PWD/$APP/Contents/Resources/qml/
 # Let macdeployqt do most of the work
 macdeployqt $PWD/$APP -qmldir=$PWD/$APP/Contents/Resources/qml -verbose=2 \
     -executable=$PWD/$APP/Contents/MacOS/sinksh -executable=$PWD/$APP/Contents/MacOS/sink_synchronizer \
-    -executable=$PWD/$APP/Contents/PlugIns/sink/resources/libsink_resource_dav.dylib \
+    -executable=$PWD/$APP/Contents/PlugIns/sink/resources/libsink_resource_caldav.dylib \
+    -executable=$PWD/$APP/Contents/PlugIns/sink/resources/libsink_resource_carddav.dylib \
     -executable=$PWD/$APP/Contents/PlugIns/sink/resources/libsink_resource_imap.dylib \
     -executable=$PWD/$APP/Contents/PlugIns/sink/resources/libsink_resource_maildir.dylib \
     -executable=$PWD/$APP/Contents/PlugIns/sink/resources/libsink_resource_mailtransport.dylib \
