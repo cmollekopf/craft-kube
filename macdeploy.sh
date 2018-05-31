@@ -10,7 +10,7 @@ set -e
 APP=Applications/KDE/kube.app
 
 # Start from scratch
-rm -Rf Applications
+rm -Rf $APP
 craft --qmerge extragear/kube
 
 # Install necessary binaries
@@ -58,5 +58,6 @@ install_name_tool -change $PWD/lib/libframeworkplugin.dylib @loader_path/../../f
 
 
 # create the final disk image
-macdeployqt $APP -dmg
+rm $PWD/Applications/KDE/kube.dmg
+macdeployqt $PWD/$APP -dmg
 

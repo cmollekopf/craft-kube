@@ -8,7 +8,6 @@ export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platf
 
 . craft/craftenv.sh
 
-craft kde/pim/kcalcore
 craft --install-deps --fetch --unpack --compile --install --qmerge extragear/sink
 craft --install-deps --fetch --unpack --compile --install --qmerge extragear/kube
 
