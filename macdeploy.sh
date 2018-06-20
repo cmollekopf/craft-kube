@@ -22,8 +22,8 @@ mkdir -p $PWD/$APP/Contents/PlugIns
 cp -R $PWD/lib/plugins/sink $PWD/$APP/Contents/PlugIns/
 
 # Install icons
-mkdir -p $PWD/$APP/Contents/Resources/icons/
-cp -R $PWD/share/icons/kube $PWD/$APP/Contents/Resources/icons/
+mkdir -p $PWD/$APP/Contents/Resources/kube/
+cp share/kube/kube-icons.rcc $PWD/$APP/Contents/Resources/kube/
 
 # Install qml files
 mkdir -p $PWD/$APP/Contents/Resources/qml/
